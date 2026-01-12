@@ -1,7 +1,7 @@
 ---
 name: "SavePower Tuya Bridge"
 description: "MQTT bridge for Tuya thermostats"
-version: "1.0.0"
+version: "1.0.1"
 slug: "savepower_tuya_bridge"
 init: false
 arch:
