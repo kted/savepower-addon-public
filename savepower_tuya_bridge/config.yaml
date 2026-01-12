@@ -1,0 +1,35 @@
+---
+name: "SavePower Tuya Bridge"
+description: "MQTT bridge for Tuya thermostats"
+version: "1.0.0"
+slug: "savepower_tuya_bridge"
+init: false
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - armhf
+  - i386
+homeassistant_api: true
+options:
+  mqtt_host: "core-mosquitto"
+  mqtt_port: 1883
+  mqtt_username: ""
+  mqtt_password: ""
+  organization_id: "default"
+  publish_interval: 60
+  telemetry_interval: 600
+  device_mapping: []
+  log_level: "info"
+schema:
+  mqtt_host: str
+  mqtt_port: port
+  mqtt_username: str?
+  mqtt_password: password?
+  organization_id: str
+  publish_interval: int(10,300)
+  telemetry_interval: int(60,3600)
+  device_mapping: list
+  log_level: list(debug|info|warning|error)?
+startup: services
+boot: auto
