@@ -29,7 +29,6 @@ schema:
   organization_id: str
   publish_interval: int(10,300)
   telemetry_interval: int(60,3600)
-  device_mapping: "list?"
   log_level: list(debug|info|warning|error)?
 startup: services
 boot: auto
